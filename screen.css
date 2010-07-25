@@ -1,45 +1,40 @@
 /* Layout */
-* {
-	margin: 0;
+* { 
+	margin: 0; 
 	padding: 0;
 }
-html, body {
-	height: 100%;
-}
-#wrapper {
-	min-height: 100%;
-}
 #header {
-	height: 100px;
-	padding-top: 30px;
+	margin: 30px 0;
 }
 #content {
 	width: 780px;
-	margin: 10px auto;
-	padding: 15px 30px;
+	margin: 0 auto;	
 }
 #footer {
+	height: 50px;
 }
 
 /* Styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	/*font-size: 90%;*/
-}
-#wrapper {
 	color: white;
-	background-color: #004080;	
+	background: url('sun_small.jpg') repeat;
 }
-#content, #footer {
-	color: black;
-	background-color: white;
+#header {
+	text-align: center;
 }
 #content {
 	border: 1px solid black;
+	color: black;
+	background-color: white;
+	padding: 15px 30px 30px;
 }
-#header h1 {
+#footer {	
+	font-size: 80%;
 	text-align: center;
+	color: white;
 }
+
 h2 {
 	color: #004080;
 	padding-top: 20px;
@@ -55,8 +50,4 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-.copyright {
-	margin-top: 30px;
-	font-size: 90%;
-	text-align: center;
-}
+
