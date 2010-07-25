@@ -18,7 +18,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
-	background: url('sun_small.jpg') repeat;
+	background: #004060 url('sun_small.jpg') repeat;
 }
 #header {
 	text-align: center;
@@ -36,9 +36,9 @@ body {
 }
 
 h2 {
-	color: #004080;
+	color: #004060;
 	padding-top: 20px;
-	border-bottom: 2px solid #004080; 
+	border-bottom: 2px solid #004060; 
 }
 p {
 	padding-top: 10px;	
