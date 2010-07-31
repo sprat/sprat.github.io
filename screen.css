@@ -6,30 +6,31 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
 	background: #004060 url('sun_small.jpg') repeat;
+	text-align: center;
 }
 #header {
 	width: 300px;
 	margin: 20px auto;
-	text-align: center;
 	text-shadow: black 5px 5px 5px;
 }
 #content {
 	width: 780px;
 	margin: 0 auto;	
+	padding: 15px 30px 30px;
+	color: black;
+	background-color: white;
 	border: 1px solid black;
 	box-shadow: 5px 5px 10px #000;
 	-webkit-box-shadow: 5px 5px 10px #000;
 	-moz-box-shadow: 5px 5px 10px #000;
 	box-shadow: 8px 8px 0 black;
-	color: black;
-	background-color: white;
-	padding: 15px 30px 30px;
+	text-align: left;
 }
 #footer {
+	margin-top: 10px;
 	height: 50px;
-	font-size: 80%;
-	text-align: center;
 	color: white;
+	font-size: 80%;
 }
 h2 {
 	color: #004060;
