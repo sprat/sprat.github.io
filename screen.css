@@ -18,6 +18,7 @@ body {
 }
 #header {
 	background: black url('banner.jpg') repeat;
+	border-bottom: 1px solid black;
 }
 #content {
 	padding: 15px 30px 30px;	
