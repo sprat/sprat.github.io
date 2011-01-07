@@ -39,11 +39,11 @@ h1 {
 }
 h2 {
 	color: #004060;
-	padding-top: 20px;
+	margin-top: 20px;
 	border-bottom: 2px solid #004060; 
 }
 p {
-	padding-top: 10px;	
+	margin-top: 10px;	
 }
 a {
 	color: #606060;
