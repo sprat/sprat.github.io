@@ -1,55 +1,54 @@
-* { 
-	margin: 0; 
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	background: #004060 url('sun_small.jpg') repeat;
-	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    background: #046 url('sun_small.jpg') repeat;
+    text-align: center;
 }
 #wrapper {
-	width: 780px;
-	margin: 10px auto;	
-	border: 1px solid black;
-	box-shadow: 5px 5px 10px black;
-	-webkit-box-shadow: 5px 5px 10px black;
-	-moz-box-shadow: 5px 5px 10px black;
+    width: 780px;
+    margin: 10px auto;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+    -moz-box-shadow: 5px 5px 10px #000;
 }
 #header {
-	background: black url('banner.jpg') repeat;
-	border-bottom: 1px solid black;
+    background: #000 url('banner.jpg') repeat;
+    border-bottom: 1px solid #000;
 }
 #content {
-	padding: 15px 30px 30px;	
-	color: black;
-	background-color: white;
-	text-align: left;
+    padding: 15px 30px 30px;
+    color: #000;
+    background-color: #FFF;
+    text-align: left;
 }
 #footer {
-	margin: 10px 0;
-	color: white;
-	font-size: 0.8em;
+    margin: 10px 0;
+    color: #FFF;
+    font-size: 0.8em;
 }
 h1 {
-	width: 350px;
-	margin: 0 auto;	
-	padding: 20px 0;
-	text-shadow: black 5px 5px 5px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-shadow: #000 5px 5px 5px;
 }
 h2 {
-	color: #004060;
-	margin-top: 20px;
-	border-bottom: 2px solid #004060; 
+    color: #046;
+    margin-top: 20px;
+    border-bottom: 2px solid #046;
 }
 p {
-	margin-top: 10px;	
+    margin-top: 10px;
 }
 a {
-	color: #606060;
-	text-decoration: none;
+    color: #39C;
+    text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
-
