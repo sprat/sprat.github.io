@@ -45,6 +45,14 @@ h2 {
 p {
     margin-top: 10px;
 }
+ul {
+    margin-left: 20px;
+}
+li {
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-top: 5px;
+}
 a {
     color: #39C;
     text-decoration: none;
