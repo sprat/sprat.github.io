@@ -22,7 +22,7 @@ header {
     text-align: center;
 }
 
-section[role="main"] {
+main {
     padding: 15px 30px 30px;
     color: #000;
     background-color: #FFF;
