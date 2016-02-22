@@ -1,67 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="sylvain prat software projects python javascript" />
+    <meta name="keywords" content="sylvain prat curriculum vitae" />
     <meta name="google-site-verification" content="ebjPjE0TmMjSAbYBN-FXNI2XbD6p8xrkpve17ATx5Mo" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="screen.css" media="all" />
-    <title>Projects by Sylvain Prat</title>
+    <title>Sylvain Prat — Docteur/Ingénieur en informatique</title>
   </head>
   <body>
+    <!-- http://bitpublimedia.ro/themeforest/versus-resume/ -->
     <div id="page-wrapper">
       <header>
-        <h1>Projects by Sylvain Prat</h1>
+        <h1>Sylvain Prat</h1>
+        <p>Docteur/Ingénieur en informatique, 14 ans d'expérience</p>
+
+        <nav class="main-menu">
+          <a href="#personal-details">Données personnelles</a>
+          <a href="#skills">Compétences &amp; certifications</a>
+          <a href="#work-experience">Expériences professionnelles</a>
+          <a href="#open-source-projects">Projets Open-Source</a>
+          <a href="#education">Études</a>
+          <a href="#hobbies">Loisirs</a>
+        </nav>
       </header>
 
       <main>
-        <h2>Open-Source Projects</h2>
+        <section id="personal-details">
+          <h1>Données personnelles</h1>
 
-        <p>Here are my open-source projects:</p>
+          <ul>
+            <li class="mobile">
+              <span class="label">Mobile :</span>
+              <a href="tel:00330678715121">+33 06 78 71 51 21</a>
+            </li>
+            <li class="email">
+              <span class="label">Email :</span>
+              <a href="#">c3lsdmFpbi5wcmF0QGdtYWlsLmNvbQ==</a>
+            </li>
+            <li class="address">
+              <span class="label">Adresse :</span>
+              <address>
+              Carrefour du bâton roulant
+              La villeneuve
+              35340 LIFFRE
+              </address>
+            </li>
+            <li>
+              37 ans, vivant maritalement, 2 enfants
+            </li>
+            <li>
+              Titulaire du Permis B
+            </li>
+          </ul>
+        </section>
 
-        <ul>
-          <li>
-            <a href="https://github.com/sprat/albumart">albumart</a> is a
-            command-line album art downloader tool. This tool recursively
-            scan the root folder of your music library in order to find
-            audio files, extracts their metadata (ID tags, etc.) and
-            downloads album cover art from some famous cover art web sites
-            according to the metadata.
-          </li>
-          <li>
-            <a href="https://github.com/sprat/minify">minify</a> provides
-            distutils commands for minifying CSS and JS resources using the
-            well-known <a href="http://yui.github.io/yuicompressor/">YUI
-            compressor</a> from Yahoo! Inc.
-          </li>
-          <li>
-            <a href="https://github.com/sprat/web.recipes">web.recipes</a>
-            is a collection of recipes that solve specific HTML/CSS design
-            problems.
-          </li>
-          <li><a href="https://github.com/sprat/yaak.inject">yaak.inject</a>
-            provides dependency injection to your applications.
-          </li>
-        </ul>
+        <!-- -------------------------------------------------------------- -->
 
-        <h2>About me</h2>
+        <section id="skills">
+          <h1>Compétences &amp; certifications</h1>
 
-        <p>
-          I'm a software engineer working for <a
-            href="http://www.net-ng.com">Net-ng</a>. I'm actually doing
-          web-development in Python using the <a
-            href="http://www.nagare.org">Nagare</a> framework which is
-          worth a look - it's a <a
-            href="http://en.wikipedia.org/wiki/Continuation#Continuations_in_Web_development">
-            continuation-based web framework</a>.
-        </p>
+          <ul>
+            <li>Expert Python</li>
+            <li>Javascript</li>
+            <li>ScrumMaster certifié</li>
+            <li>HTML5/CSS3</li>
+            <li>Anglais</li>
+          </ul>
+
+          <p>TODO: à compléter, ajouter des curseurs</p>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+
+        <section id="work-experience">
+          <h1>Expériences professionnelles</h1>
+
+          <p>J'occupe actuellement un poste d'ingénieur informatique dans la
+            société <a href="http://www.net-ng.com">Net-ng</a>. Je travaille dans
+            le Web en Python &amp; Javascript à l'aide du framework
+            <a href="http://www.nagare.org">Nagare</a> : c'est un framework à base
+            de composants utilisant les
+            <a href="http://en.wikipedia.org/wiki/Continuation">continuations</a>.</p>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+
+        <section id="open-source-projects">
+          <h1>Projets Open-Source</h1>
+
+          <p>Je développe et maintiens plusieurs projets Open-Source sur mon
+          temps libre :</p>
+  
+          <ul>
+            <li>
+              <a href="https://github.com/sprat/albumart">albumart</a> est un
+              outil en ligne de commande permettant de télécharger des jaquettes
+              d'albums de musique.
+            </li>
+            <li>
+              <a href="https://github.com/sprat/minify">minify</a> fournit des
+              commandes distutils permettant de minifier des fichiers CSS et JS
+              en utilisant l'outil <a href="http://yui.github.io/yuicompressor">YUI
+              compressor</a> de Yahoo! Inc.
+            </li>
+            <li>
+              <a href="https://github.com/sprat/web.recipes">web.recipes</a>
+              est une collection de recettes permettant de résoudre certaines
+              problématiques courantes en HTML/CSS.
+            </li>
+            <li><a href="https://github.com/sprat/yaak.inject">yaak.inject</a>
+              fournit des outils d'injection de dépendances pour des
+              applications Python.
+            </li>
+          </ul>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+
+        <section id="education">
+          <h1>Études</h1>
+        </section>
+
+        <!-- -------------------------------------------------------------- -->
+
+        <section id="hobbies">
+          <h1>Loisirs</h1>
+          
+          <ul>
+            <li>
+              <span class="label">Escalade :</span>
+              15 ans de pratique, diplôme d'initiateur en escalade
+            </li>
+            <li>
+              <span class="label">Musique :</span>
+              30 ans de pratique de la guitare dont 10 ans d'école de musique,
+              batterie, basse, MAO
+            </li>
+            <li>
+              <span class="label">Électronique :</span>
+              Conception et réalisation de circuits, électronique musicale
+              (amplificateurs, effets) et numérique (montages à base de PIC,
+              Arduino et Raspberry PI)
+            </li>
+          </ul>
+        </section>
       </main>
 
       <footer>
-        <p>
-          Copyright © 2010 by Sylvain Prat - Hosted by <a
-            href="https://github.com/">GitHub</a>
-        </p>
+        <p>Copyright © 2016 par Sylvain Prat</p>
       </footer>
     </div>
+
+    <script src="site.js"></script>
   </body>
 </html>
