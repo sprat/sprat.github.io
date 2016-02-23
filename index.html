@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="screen.css" media="all" />
-    <title>Sylvain Prat — Docteur/Ingénieur en informatique</title>
+    <title>Sylvain Prat – Docteur/Ingénieur en informatique</title>
   </head>
   <body>
     <!-- http://bitpublimedia.ro/themeforest/versus-resume/ -->
@@ -17,7 +17,7 @@
         <p>Docteur/Ingénieur en informatique, 14 ans d'expérience</p>
 
         <nav class="main-menu">
-          <a href="#personal-details">Données personnelles</a>
+          <a href="#personal-details">Informations personnelles</a>
           <a href="#skills">Compétences &amp; certifications</a>
           <a href="#work-experience">Expériences professionnelles</a>
           <a href="#open-source-projects">Projets Open-Source</a>
@@ -28,9 +28,13 @@
 
       <main>
         <section id="personal-details">
-          <h1>Données personnelles</h1>
+          <h1>Informations personnelles</h1>
 
-          <ul>
+          <ul class="facts">
+            <li class="name">
+              <span class="label">Nom :</span>
+              Sylvain PRAT
+            </li>
             <li class="mobile">
               <span class="label">Mobile :</span>
               <a href="tel:00330678715121">+33 06 78 71 51 21</a>
@@ -41,17 +45,20 @@
             </li>
             <li class="address">
               <span class="label">Adresse :</span>
-              <address>
-              Carrefour du bâton roulant
-              La villeneuve
-              35340 LIFFRE
+              <address>Carrefour du bâton roulant, la villeneuve, 35340 LIFFRÉ
               </address>
             </li>
-            <li>
-              Nationalité Française
+            <li class="birth-date">
+              <span class="label">Date de naissance :</span>
+              16 février 1979
             </li>
-            <li>
-              37 ans, vivant maritalement, 2 enfants
+            <li class="nationality">
+              <span class="label">Nationalité :</span>
+              Française
+            </li>
+            <li class="marital-status">
+              <span class="label">Situation familiale :</span>
+              PACSé, 2 enfants
             </li>
             <li>
               Titulaire du Permis B
@@ -64,7 +71,7 @@
         <section id="skills">
           <h1>Compétences &amp; certifications</h1>
 
-          <p>Compétences principales</p>
+          <p>Compétences principales :</p>
           <ul>
             <li>Expert Python</li>
             <li>Expert Javascript</li>
@@ -75,13 +82,13 @@
 
           <p>Autres compétences :</p>
           <ul>
-            <li>Langages informatiques : C#, C++, Java, PHP, Caml, Prolog, assembleur 80x86</li>
-            <li>Base de données : MySQL, PostgreSQL, SQL Server</li>
-            <li>Frameworks : Nagare, .NET 2.0, 3.5 & WCF, Persistent Datasets, CAB/SCSF, J2EE, Struts, Hibernate, OpenGL (3D), OpenSceneGraph, QT, wxWidgets, SDL</li>
-            <li>Méthodologies : Design Patterns & UML, Scrum, Extreme Programming, Refactoring, TDD</li>
-            <li>Version Control: Mercurial, SVN, CVS</li>
-            <li>Logiciels : Eclipse, Visual Studio 2008, Suite Microsoft Office</li>
-            <li>Langues : anglais (TOEIC : 800), notions d'allemand</li>
+            <li>Langages informatiques : C#, C++, Java, Caml, Prolog, assembleur 80x86</li>
+            <li>Systèmes : Linux, Windows</li>
+            <li>Base de données : MySQL, PostgreSQL, Redis, SQL Server</li>
+            <li>Frameworks : Nagare, .NET, OpenGL</li>
+            <li>Gestionnaires de versions : Git, Mercurial, SVN, CVS</li>
+            <li>Méthodologies : Agile (Scrum, Extreme Programming), Test-Driven Development, UML</li>
+            <li>Langues : notions d'allemand</li>
           </ul>
         </section>
 
@@ -98,74 +105,155 @@
             <a href="http://en.wikipedia.org/wiki/Continuation">continuations</a>.</p>
 
           <article>
-            <h1 class="job-title">Ingénieur développement Web</h1>
-            <h2 class="company">Net-ng</h2>
-            <p class="skills">Python, Javascript, HTML5, CSS3, Linux</p>
-            <p>Missions :</p>
-            <ul>
-              <li>Septembre 2011 - Juin 2012 : conception et développement de la
-              version mobile du portail Web Eurêka (innovation participative
-              PagesJaunes) ciblant smartphones et tablettes (iPhone/iPad),
-              environnement Python, Nagare, Javascript, Linux.</li>
-              <li>Juillet 2011 - Août 2011 : conception et développement d’un
-              IDE Web en mode Agile (Scrum, 5 itérations), création d’un
-              installeur et déploiement de la solution, environnement Python,
-              Nagare, Javascript, Linux.</li>
-              <li>Juin 2010 - Juin 2011 : développement d’évolutions fonctionnelles sur le portail Web Eurêka (innovation participative PagesJaunes), maintenance et support, environnement Python, Nagare, Javascript, Linux.</li>
-            </ul>
+            <aside>
+              <p class="time">Juin 2010 – Aujourd'hui</p>
+              <p class="place">Net-ng</p>
+              <p class="skills">Python, Javascript, HTML5, CSS3, Linux</p>
+            </aside>
+
+            <section>
+              <h1 class="title">Ingénieur développement Web</h1>
+
+              <p>Projets et missions :</p>
+
+              <ul>
+                <li>...</li>
+                <li>Septembre 2011 – Juin 2012 : conception et développement de la
+                version mobile du portail Web Eurêka (innovation participative
+                PagesJaunes) ciblant smartphones et tablettes (iPhone/iPad),
+                environnement Python, Nagare, Javascript, Linux.</li>
+                <li>Juillet 2011 – Août 2011 : conception et développement d’un
+                IDE Web en mode Agile (Scrum, 5 itérations), création d’un
+                installeur et déploiement de la solution, environnement Python,
+                Nagare, Javascript, Linux.</li>
+                <li>Juin 2010 – Juin 2011 : développement d’évolutions fonctionnelles sur le portail Web Eurêka (innovation participative PagesJaunes), maintenance et support, environnement Python, Nagare, Javascript, Linux.</li>
+              </ul>
+            </section>
           </article>
 
           <article>
-            <h1 class="job-title">Ingénieur développement</h1>
-            <h2 class="company">Sodifrance</h2>
-            <p class="skills">C#, Java</p>
-            <p>Missions principales</p>
-            <ul>
-              <li>Mars 2009 - Mai 2010 : projet de migration semi-automatisée de l’application de location de voitures & gestion du parc automobile Europcar écrite en Oracle Forms & C++ vers une cible Java Web, poste d’expert technique et développeur sur la migration C++, environnement Java, Spring, Hibernate.</li>
-              <li>Mi-novembre 2008 - février 2009 : poste de chef de projet/expert technique & Scrum Master sur un projet de migration semi-automatisée de la partie paie et facturation de l'ancien applicatif AGATT utilisé dans les agences de travail temporaire Adecco & Adia, environnement C#/.NET 3.5, Winform, Spring.NET, NHibernate</li>
-              <li>Mi-septembre 2008 - novembre 2008 : projet Roval (voir plus bas)</li>
-              <li>Mi-août 2008 - Mi-Septembre 2008 : développement de deux modules Plomb et Amiante d'une application de diagnostic immobilier pour ITGA et Timwi au sein de la société Sodifrance, technologies C#/.NET 2.0, Winform.</li>
-              <li>Septembre 2007 - août 2008 : développement d’un système de gestion de production pour la société Roval (société de fabrication de cosmétiques) au sein de la société Sodifrance, technologies C#/.NET 2.0, Winform, WCF, NUnit, CAB/SCSF, Persistent datasets</li>
-            </ul>
+            <aside>
+              <p class="time">Septembre 2007 – Mai 2010</p>
+              <p class="place">Sodifrance</p>
+              <p class="skills">C#, Java</p>
+            </aside>
+
+            <section>
+              <h1 class="title">Ingénieur développement</h1>
+
+              <p>Projets et missions :</p>
+
+              <ul>
+                <li>Mars 2009 – Mai 2010 : projet de migration semi-automatisée
+                de l’application de location de voitures &amp; gestion du parc
+                automobile Europcar écrite en Oracle Forms &amp; C++ vers une
+                cible Java Web, poste d’expert technique et développeur sur la
+                migration C++. Technologies : Java, Spring, Hibernate.</li>
+                <li>Mi-novembre 2008 – février 2009 : poste de chef de
+                projet/expert technique &amp; Scrum Master sur un projet de
+                migration semi-automatisée de la partie paie et facturation de
+                l'ancienne application utilisée dans les agences de travail
+                temporaire Adecco &amp; Adia. Technologies : C#/.NET 3.5,
+                Winform, Spring.NET, NHibernate</li>
+                <li>Mi-août 2008 – Mi-Septembre 2008 : développement de deux
+                modules Plomb et Amiante d'une application de diagnostic
+                immobilier pour ITGA et Timwi au sein de la société Sodifrance.
+                Technologies : C#/.NET 2.0, Winform.</li>
+                <li>Septembre 2007 – août 2008, puis Mi-septembre 2008 –
+                novembre 2008 : développement d’un système de gestion de
+                production pour la société Roval (société de fabrication de
+                cosmétiques) au sein de la société Sodifrance. Technologies :
+                C#/.NET 2.0, Winform, WCF, NUnit, CAB/SCSF, Persistent
+                datasets</li>
+              </ul>
+            </section>
           </article>
 
           <article>
-            <h1 class="job-title">Doctorant</h1>
-            <h2 class="company">France Telecom R&amp;D</h2>
-            <p class="skills">C++</p>
+            <aside>
+              <p class="time">Novembre 2002 – novembre 2005</p>
+              <p class="place">France Telecom R&amp;D</p>
+              <p class="skills">C++</p>
+            </aside>
 
-            <p>Novembre 2002 - novembre 2005 : contrat de recherche à France Télécom R&D Rennes sur la « compression et visualisation de grandes scènes 3D par approche topologique » : étude, conception, développement d'une plateforme en C++ permettant la navigation dans des villes virtuelles 3D dans un contexte réseau client-serveur, s'appuyant sur les frameworks OpenGL, OpenSceneGraph et QT, invention d'une méthode de compression de modèles 3D</p>
+            <section>
+              <h1 class="title">Doctorant</h1>
 
-            <p>Publications scientifiques</p>
-            <ul>
-              <li>Prat S., Gioia P., Bertrand Y., Meneveaux D., Connectivity Compression in Arbitrary Dimension, Pacific Graphics 2005, Macao, China. Paru dans « The Visual Computer », numéro spécial, Springer Berlin Heidelberg, vol. 21, no. 8, pp. 876-885 - Octobre 2005</li>
-              <li>Prat S., Gioia P., Bertrand Y., Meneveaux D., Compression de la connectivité en dimension quelconque, Journées CORESA 2005, Rennes - Poster. - Novembre 2005</li>
-            </ul>
+              <p>Doctorat et contrat de recherche à France Télécom R&amp;D
+              Rennes sur le thème : « compression et visualisation de grandes
+              scènes 3D par approche topologique ».</p>
+
+              <p>Étude, conception, développement d'une plateforme en C++
+              permettant la navigation dans des villes virtuelles 3D dans un
+              contexte réseau client-serveur, s'appuyant sur les frameworks
+              OpenGL, OpenSceneGraph et QT.</p>
+
+              <p>Invention d'une méthode de compression de modèles 3D, publiée
+              dans plusieurs journaux scientifiques :</p>
+              <ul>
+                <li>Prat S., Gioia P., Bertrand Y., Meneveaux D., Connectivity
+                Compression in Arbitrary Dimension, Pacific Graphics 2005,
+                Macao, China. Paru dans « The Visual Computer », numéro spécial,
+                Springer Berlin Heidelberg, vol. 21, no. 8, pp. 876-885 –
+                Octobre 2005</li>
+                <li>Prat S., Gioia P., Bertrand Y., Meneveaux D., Compression de
+                la connectivité en dimension quelconque, Journées CORESA 2005,
+                Rennes – Poster – Novembre 2005</li>
+              </ul>
+            </section>
           </article>
 
           <article>
-            <h1 class="job-title">Projet de fin d'études, stage de DEA</h1>
-            <h2 class="company">Irisa</h2>
-            <p class="skills">C++</p>
-            <p>
-              2002, 4 mois : projet de fin d’études ingénieur et stage de DEA sur la modélisation des « affordances » d’objets virtuels dans le cadre de l’animation comportementale : étude, conception et développement d'un module en C++ pour une plateforme d'animation spécifique à l'équipe SIAMES permettant de représenter les interactions entre humanoïdes virtuels et objets 3D
-            </p>
+            <aside>
+              <p class="time">2002, 4 mois</p>
+              <p class="place">Irisa</p>
+              <p class="skills">C++</p>
+            </aside>
+
+            <section>
+              <h1 class="title">Projet de fin d'études, stage de DEA</h1>
+
+              <p>Projet de fin d’études ingénieur et stage de DEA sur le sujet
+              « Modélisation des affordances d’objets virtuels dans le cadre
+              de l’animation comportementale ».</p>
+
+              <p>Étude, conception et développement d'un module en C++ pour une
+              plateforme d'animation spécifique à l'équipe SIAMES permettant de
+              représenter les interactions entre humanoïdes virtuels et objets
+              3D.</p>
+            </section>
           </article>
 
           <article>
-            <h1 class="job-title">Vacataire</h1>
-            <h2 class="company">INSA Rennes</h2>
-            <p class="skills">C++</p>
-            <p>
-              2001-2002 : vacataire Travaux Pratiques en programmation système (threads, synchronisation et ordonnancement, pagination, gestion des défauts de cache…), développement en C++ sur le système Nachos
-            </p>
+            <aside>
+              <p class="time">2001 – 2002, quelques semaines</p>
+              <p class="place">INSA Rennes</p>
+              <p class="skills">C++</p>
+            </aside>
+
+            <section>
+              <h1 class="title">Vacataire</h1>
+
+              <p>Vacataire Travaux Pratiques en programmation système (threads,
+              synchronisation et ordonnancement, pagination, gestion des défauts
+              de cache…), développement en C++ sur le système Nachos.</p>
+            </section>
           </article>
 
           <article>
-            <h1 class="job-title">Stagiaire</h1>
-            <h2 class="company">Acterna Rennes</h2>
-            <p class="skills">C++</p>
-            <p>2001, 3 mois : stage à Acterna Rennes, implémentation d’un parseur XML pour un système d'aide en ligne dans une plateforme embarquée, développement en C++ s'appuyant sur la librairie expat</p>
+            <aside>
+              <p class="time">2001, 3 mois</p>
+              <p class="place">Acterna Rennes</p>
+              <p class="skills">C++</p>
+            </aside>
+
+            <section>
+              <h1 class="title">Stagiaire</h1>
+
+              <p>Stage Ingénieur, implémentation d’un parseur XML pour un
+              système d'aide en ligne dans une plateforme embarquée,
+              développement en C++ s'appuyant sur la librairie expat.</p>
+            </section>
           </article>
 
         </section>
@@ -187,8 +275,8 @@
             <li>
               <a href="https://github.com/sprat/minify">minify</a> fournit des
               commandes distutils permettant de minifier des fichiers CSS et JS
-              en utilisant l'outil <a href="http://yui.github.io/yuicompressor">YUI
-              compressor</a> de Yahoo! Inc.
+              en utilisant l'outil <a href="http://yui.github.io/yuicompressor">
+              YUI Compressor</a> de Yahoo! Inc.
             </li>
             <li>
               <a href="https://github.com/sprat/web.recipes">web.recipes</a>
@@ -207,10 +295,25 @@
         <section id="education">
           <h1>Études</h1>
 
-          <p>
-          Mars 2009 : formation développeur .NET certifié MCPD à Egilia Learning
-          1-2 décembre 2008 : formation & certification Scrum Master avec Jeff Sutherland
-          Juillet-août 2007 : formation .NET 2.0, Persistent Datasets à Sodifrance
+          <article>
+            <h1 class="title">Formation développeur .NET certifié MCPD</h1>
+            <p class="place">Egilia Learning</p>
+            <p class="time">Mars 2009</p>
+
+            <div class="details">
+              <p>...</p>
+            </div>
+          </article>
+
+          <article>
+            <h1 class="title"></h1>
+            <p>1-2 décembre 2008 : formation &amp; certification Scrum Master avec Jeff Sutherland</p>
+          </article>
+
+          <article>
+            <p>Juillet-août 2007 : formation .NET 2.0, Persistent Datasets à Sodifrance</p>
+          </article>
+
           Février-mars 2007 : formation Java/J2EE, Struts, Hibernate à Sodifrance
           2002-2008 : Doctorat spécialité Informatique à l’école doctorale MATISSE
           2002 : DEA spécialité Informatique à l’Université de Rennes 1
