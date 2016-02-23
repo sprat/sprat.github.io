@@ -7,5 +7,4 @@
 
     emailLink.innerHTML = email;
     emailLink.setAttribute('href', 'mailto:' + email);
-    console.log(emailLink);
 }());
