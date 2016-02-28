@@ -48,8 +48,9 @@ address {
 article {
     display: table;
     width: 100%;
-    margin: 20px 0;
+    table-layout: fixed;
     border-collapse: collapse;
+    margin: 20px 0;
 }
 
 article aside,
@@ -64,6 +65,12 @@ article aside {
     width: 25%;
 }
 
-.portfolio img {
-    max-width: 100%;
+article section {
+    width: 75%;
+}
+
+@media print {
+    .fotorama {
+        display: none;
+    }
 }
