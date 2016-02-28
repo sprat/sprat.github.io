@@ -10,5 +10,15 @@
         emailLink.setAttribute('href', 'mailto:' + email);
     }
 
+    function initDiaporamas() {
+        $('.diaporama').fotorama({
+            width: '100%',
+            allowfullscreen: true,
+            nav: 'thumbs',
+            loop: true
+        });
+    }
+
     initEmailLinks();
+    initDiaporamas();
 }());

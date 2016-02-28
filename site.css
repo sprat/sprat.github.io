@@ -70,7 +70,7 @@ article section {
 }
 
 @media print {
-    .fotorama {
+    .diaporama {
         display: none;
     }
 }
