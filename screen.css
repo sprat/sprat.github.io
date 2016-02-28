@@ -63,3 +63,7 @@ article aside {
     font-size: 0.9em;
     width: 25%;
 }
+
+.portfolio img {
+    max-width: 100%;
+}
