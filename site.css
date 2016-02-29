@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
@@ -20,29 +20,40 @@ body {
 }
 
 a {
-    color: #666;
+    display: inline-block;
+    color: #000;
     text-decoration: none;
+    border-bottom: 1px dotted #000;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #06C;
+    border-bottom-color: #06C;
 }
 
-ul.facts {
-    list-style: none;
+dl {
     padding: 0;
+    overflow: hidden;
 }
 
-ul.facts > li {
-    padding: 10px 0;
+dt,
+dd {
+    display: inline-block;
+    float: left;
+    margin: 5px 0;
 }
 
-ul.facts > li + li {
-    border-top: 1px solid #e1e1e1; 
+dt {
+    clear: left;
 }
 
 address {
     display: inline;
+    font-style: normal;
+}
+
+.facts > dt {
+    width: 10em;
 }
 
 article {
