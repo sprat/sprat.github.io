@@ -14,21 +14,43 @@ body {
     text-align: justify;
 }
 
-#page-wrapper {
-    margin: 0 auto;
-    max-width: 960px;
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+:first-child {
+    margin-top: 0;
 }
 
 a {
     display: inline-block;
     color: #000;
     text-decoration: none;
-    border-bottom: 1px dotted #000;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
 }
 
 a:hover {
     color: #06C;
     border-bottom-color: #06C;
+}
+
+address {
+    display: inline;
+    font-style: normal;
+}
+
+ul {
+    list-style: disc outside;
+    padding-left: 1.2em;
 }
 
 dl {
@@ -40,47 +62,123 @@ dt,
 dd {
     display: inline-block;
     float: left;
-    margin: 5px 0;
+    margin: 0 0 0.5em;
 }
 
 dt {
     clear: left;
 }
 
-address {
-    display: inline;
-    font-style: normal;
+header,
+footer {
+    padding: 2.5em 0;
+    text-align: center;
 }
 
-.facts > dt {
-    width: 10em;
+.headline {
+    position: relative;
+}
+
+h1 {
+    width: 8em;
+    margin: 0 auto;
+    padding: 0.5em;
+    border: 2px solid #000;
+}
+
+.qualification {
+    position: absolute;
+    display: inline-block;
+    padding: 0 0.5em;
+    bottom: 1.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background: #FFF;
+    margin: 0;
+}
+
+.experience {
+    margin: 0.5em 0 0;
+    text-align: center;
+}
+
+.main-menu {
+    margin-top: 2.5em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main-menu a {
+    float: left;
+    padding: 0.25em 1em;
+    font-size: 1.125em;
+}
+
+.copyright {
+    font-size: 0.8125em;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px;
+}
+
+.facts dt {
+    width: 12em;
+}
+
+h2 {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+section {
+    margin-top: 2.5em;
 }
 
 article {
     display: table;
-    width: 100%;
     table-layout: fixed;
-    border-collapse: collapse;
-    margin: 20px 0;
+    width: 100%;
+    margin: 1.5em 0;
 }
 
 article aside,
 article section {
     display: table-cell;
-    padding: 10px;
-    border: 1px solid #CCC;
 }
 
 article aside {
-    font-size: 0.9em;
-    width: 25%;
+    font-size: 1em;
+    width: 15em;
+    padding-right: 3em;
 }
 
 article section {
-    width: 75%;
+    width: calc(100% - 15em);
+}
+
+.dates {
+    font-size: 1.5em;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0;
+}
+
+.duration {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 0.65em;
+    padding: 0.25em;
+    border: 1px solid #000;
+    float: right;
+    font-weight: normal;
 }
 
 @media print {
+    .main-menu,
     .diaporama {
         display: none;
     }
