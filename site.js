@@ -2,7 +2,7 @@
     'use strict';
 
     function initEmailLinks() {
-        var emailLink = document.querySelector('.email a'),
+        var emailLink = document.querySelector('a.email'),
             encodedEmail = emailLink.innerHTML,
             email = atob(encodedEmail);
 
