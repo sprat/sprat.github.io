@@ -30,6 +30,10 @@ h3 {
     margin-top: 0;
 }
 
+:last-child {
+    margin-bottom: 0;
+}
+
 a {
     display: inline-block;
     color: #000;
@@ -116,7 +120,7 @@ h1 {
 }
 
 .copyright {
-    font-size: 0.8125em;
+    font-size: 0.875em;
 }
 
 main {
