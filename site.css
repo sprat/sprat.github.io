@@ -81,27 +81,35 @@ footer {
 }
 
 h1 {
-    width: 8em;
+    font-family: 'Damion';
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-indent: -0.25em;
+    padding: 0.25em 0.5em;
+    border: 5px solid #000;
+    border-radius: 0.25em;
+    width: 6em;
     margin: 0 auto;
-    padding: 0.5em;
-    border: 2px solid #000;
+}
+
+.headline .details {
+    margin-top: -1em;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 0.5em;
+    background: #FFF;
 }
 
 .qualification {
-    position: absolute;
-    display: inline-block;
-    padding: 0 0.5em;
-    bottom: 1.3em;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 1.125em;
     font-weight: bold;
-    background: #FFF;
     margin: 0;
 }
 
 .experience {
-    margin: 0.5em 0 0;
-    text-align: center;
+    margin: 0;
 }
 
 .main-menu {
