@@ -1,6 +1,10 @@
 (function() {
     'use strict';
 
+    function initMenu() {
+        $('.main-menu').sticky();
+    }
+
     function initEmailLinks() {
         var emailLink = document.querySelector('a.email'),
             encodedEmail = emailLink.innerHTML,
@@ -19,6 +23,7 @@
         });
     }
 
+    initMenu();
     initEmailLinks();
     initDiaporamas();
 }());
