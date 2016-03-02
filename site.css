@@ -60,9 +60,8 @@ dt {
     clear: left;
 }
 
-header,
-footer,
-main {
+main,
+.sticky-wrapper {
     margin: 0 auto;
     max-width: 960px;
     padding: 0 20px;
@@ -70,8 +69,19 @@ main {
 
 header,
 footer {
+    background: #EEE;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+}
+
+header {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 2.5em;
+}
+
+footer {
+    border-top: 1px solid #CCC;
+    margin-top: 2.5em;
 }
 
 .headline {
@@ -99,7 +109,7 @@ h1 {
     text-align: center;
     display: inline-block;
     padding: 0 0.5em;
-    background: #FFF;
+    background: #EEE;
 }
 
 .qualification {
@@ -113,12 +123,12 @@ h1 {
 }
 
 .main-menu {
-    overflow: hidden;
+    position: relative;
     display: table;
     width: 100%;
-    text-align: center;
-    position: relative;
+    overflow: hidden;
     z-index: 100;
+    text-align: center;
     color: #FFF;
     background: #222;
     background-image: -webkit-linear-gradient(bottom, #222 0%, #444 100%);
