@@ -14,6 +14,18 @@ body {
     text-align: justify;
 }
 
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    margin: 1.5em 0 0.5em;
+}
+
 h1 {
     font-size: 3em;
 }
@@ -24,14 +36,6 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-}
-
-:first-child {
-    margin-top: 0;
-}
-
-:last-child {
-    margin-bottom: 0;
 }
 
 address {
@@ -67,27 +71,29 @@ main,
     padding: 0 20px;
 }
 
+.sticky-wrapper {
+    margin-top: -4.2em;
+    margin-bottom: 2.5em;
+}
+
 header,
 footer {
     background: #EEE;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+    text-align: center;
 }
 
 header {
-    border-bottom: 1px solid #CCC;
+    position: relative;
+    padding-bottom: 3.5em;
     margin-bottom: 2.5em;
+    border-bottom: 1px solid #CCC;
 }
 
 footer {
-    border-top: 1px solid #CCC;
     margin-top: 2.5em;
-}
-
-.headline {
-    position: relative;
-    text-align: center;
-    margin-bottom: 2.5em;
+    border-top: 1px solid #CCC;
 }
 
 h1 {
@@ -96,14 +102,15 @@ h1 {
     font-weight: normal;
     line-height: 1.2em;
     text-indent: -0.25em;
+    width: 6em;
+    margin: 0 auto;
     padding: 0.25em 0.5em;
     border: 5px solid #000;
     border-radius: 0.25em;
-    width: 6em;
-    margin: 0 auto;
+    text-shadow: 1px 1px 1px #999;
 }
 
-.headline .details {
+header .details {
     margin-top: -1em;
     font-style: italic;
     text-align: center;
@@ -136,9 +143,9 @@ h1 {
     background-image: -o-linear-gradient(bottom, #222 0%, #444 100%);
     background-image: linear-gradient(bottom, #222 0%, #444 100%);
     text-shadow: 1px 1px 1px #000;
-    -webkit-box-shadow: 2px 2px 3px #666;
-    -moz-box-shadow: 2px 2px 3px #666;
-    box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 5px #666;
+    -moz-box-shadow: 2px 2px 5px #666;
+    box-shadow: 2px 2px 5px #666;
     border-radius: 0.5em;
 }
 
@@ -153,6 +160,7 @@ h1 {
     font-size: 1.125em;
     color: inherit;
     text-decoration: none;
+    outline: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -167,11 +175,6 @@ h1 {
 
 .main-menu a:hover {
     background: rgba(255, 255, 255, 0.1);
-}
-
-.copyright {
-    text-align: center;
-    font-size: 0.875em;
 }
 
 main a {
@@ -192,12 +195,17 @@ main a:hover {
 }
 
 h2 {
+    font-family: 'Damion';
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.2em;
     color: #000;
     border-bottom: 2px solid #000;
+    text-shadow: 1px 1px 1px #999;
 }
 
 section {
-    margin-top: 2.5em;
+    margin-top: 4em;
 }
 
 /* anchor offset due to sticky menu */
@@ -249,8 +257,27 @@ article section {
 }
 
 @media print {
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
     .main-menu,
     .diaporama {
         display: none;
+    }
+
+    header,
+    footer {
+        background: none;
+        border: 0;
+        padding: 0;
     }
 }
