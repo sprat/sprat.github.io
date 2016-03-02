@@ -22,22 +22,6 @@ body {
     margin-bottom: 0;
 }
 
-h1, h2, h3 {
-    margin: 1.5em 0 0.5em;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
 address {
     display: inline;
     font-style: normal;
@@ -67,7 +51,7 @@ dt {
 main,
 .sticky-wrapper {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1000px;
     padding: 0 20px;
 }
 
@@ -186,8 +170,8 @@ main a {
 }
 
 main a:hover {
-    color: #039;
-    border-bottom-color: #039;
+    color: #036;
+    border-bottom-color: #036;
 }
 
 .facts dt {
@@ -220,7 +204,7 @@ article {
     display: table;
     table-layout: fixed;
     width: 100%;
-    margin: 1.5em 0;
+    margin: 3em 0;
 }
 
 article aside,
@@ -230,30 +214,73 @@ article section {
 
 article aside {
     font-size: 1em;
-    width: 15em;
-    padding-right: 3em;
+    width: 14em;
+    padding-right: 1.5em;
+    border-right: 1px solid #CCC;
 }
 
 article section {
-    width: calc(100% - 15em);
+    padding-left: 1.5em;
+    width: calc(100% - 17em);
+}
+
+h3,
+.place{
+    font-family: 'PT Sans Narrow';
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .dates {
-    font-size: 1.5em;
-    font-weight: bold;
-    overflow: hidden;
-    margin: 0;
+    font-size: 1.25em;
+    margin: -0.25em 0 0;
 }
 
 .duration {
     display: inline-block;
-    vertical-align: baseline;
-    font-size: 0.65em;
-    padding: 0.25em 0.5em;
-    border: 1px solid #CCC;
-    background: #EEE;
-    float: right;
     font-weight: normal;
+    font-style: italic;
+}
+
+.duration:before {
+    content: '(';
+    display: inline-block;
+}
+
+.duration:after {
+    content: ')';
+    display: inline-block;
+}
+
+.skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media not print {
+    .skills li {
+        float: left;
+        clear: left;
+        position: relative;
+        margin: 0.25em 0;
+        padding: 0.25em 0.5em 0.25em 1em;
+        border-radius: 0.25em 0 0 0.25em;
+        line-height: 1;
+        background: #369;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+    }
+
+    .skills li:after {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        content: "";
+        display: inline-block;
+        border: 0.75em solid transparent;
+        border-right: 0;
+        border-left-color: #369;
+    }
 }
 
 @media print {
