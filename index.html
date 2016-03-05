@@ -33,21 +33,21 @@
     </nav>
 
     <main>
-      <section id="personal-details">
+      <section id="personal-details" itemscope itemtype="http://schema.org/Person">
         <h2>Identité</h2>
 
-        <dl class="facts" itemscope itemtype="http://schema.org/Person">
+        <dl class="facts">
           <dt>Nom :</dt>
           <dd itemprop="name">Sylvain Prat</dd>
 
           <dt>Email :</dt>
           <dd>
-            <a href="#" itemprop="email">flyinva.ceng@tznvy.pbz</a>
+            <a href="#" class="email">flyinva.ceng@tznvy.pbz</a>  <!-- rot13 -->
           </dd>
 
           <dt>Mobile :</dt>
-          <dd>
-            <a href="tel:00330678715121" itemprop="telephone">+33 06 78 71 51 21</a>
+          <dd itemprop="telephone">
+            <a href="tel:00330678715121">+33 06 78 71 51 21</a>
           </dd>
 
           <dt>Adresse :</dt>
@@ -71,11 +71,13 @@
           -->
         </dl>
 
-        <p class="occupation">J'occupe actuellement un poste d'ingénieur
-          développement Web dans la société
-          <a href="http://www.net-ng.com">Net-ng</a>. Nous réalisons des
-          applications Web métiers en Python &amp; Javascript à l'aide du
-          framework <a href="http://www.nagare.org">Nagare</a>.</p>
+        <meta itemprop="url" content="http://sprat.github.io/" />
+
+        <p class="occupation">J'occupe actuellement un poste
+        d'<span itemprop="jobTitle">Ingénieur développement Web</span> dans la
+        société <a itemprop="worksFor" href="http://www.net-ng.com">Net-ng</a>.
+        Nous réalisons des applications Web métiers en Python &amp; Javascript
+        à l'aide du framework <a href="http://www.nagare.org">Nagare</a>.</p>
 
       </section>
 
