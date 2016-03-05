@@ -12,7 +12,7 @@
     }
 
     function initEmailLinks() {
-        var emailLink = document.querySelector('a[itemprop="email"]'),
+        var emailLink = document.querySelector('a.email'),
             encodedEmail = emailLink.innerHTML,
             email = rot13(encodedEmail);
 
