@@ -117,10 +117,7 @@ header .details {
     text-align: center;
     color: #FFF;
     background: #222;
-    background-image: -webkit-linear-gradient(bottom, #222 0%, #444 100%);
-    background-image: -moz-linear-gradient(bottom, #222 0%, #444 100%);
-    background-image: -o-linear-gradient(bottom, #222 0%, #444 100%);
-    background-image: linear-gradient(bottom, #222 0%, #444 100%);
+    background-image: linear-gradient(to top, #222 0%, #444 100%);
     text-shadow: 1px 1px 1px #000;
     -webkit-box-shadow: 2px 2px 5px #666;
     -moz-box-shadow: 2px 2px 5px #666;
