@@ -2,7 +2,7 @@
     'use strict';
 
     function initMenu() {
-        $('.main-menu').sticky();
+        $('.main-menu').sticky({zIndex: 1});
     }
 
     function initDiaporamas() {
