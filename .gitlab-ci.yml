@@ -1,6 +1,6 @@
 ---
 pages:
-  image: cyb3rjak3/html5validator:latest
+  image: cyb3rjak3/html5validator:latest-alpine
   script:
     - html5validator --root public/ --also-check-css --format text
   artifacts:
